@@ -1,0 +1,84 @@
+page-book-info {
+    .header {
+        background-color: bisque;
+        position: absolute;
+        top: 0;
+        height: 35%;
+        width: 100%;
+        z-index: 10;
+        // background-color: burlywood;
+        .row-header {
+            position: absolute;
+            top: 44px;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            .bookpic {
+                padding: 5px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    padding: 5px;
+                }
+            }
+            .bookinfo {
+                padding-top: 10px;
+                height: 100%;
+                width: 100%;
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+                .row-button {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 100%;
+                    .add-button {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                    }
+                    .button-choice {
+                        height: 30px;
+                        width: 120px;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+    .toolbar-background-md {
+        background-color: transparent;
+    }
+    .toolbar-background-ios {
+        background-color: transparent;
+    }
+    ion-content {
+        top: 35%;
+        .button-view {
+            height: 30px;
+            width: 100px;
+            font-size: smaller;
+            text-transform: none;
+        }
+        .vote {
+            border-top: 0.5px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+            text-align: center;
+            padding: 2px;
+            width: 100%;
+            ion-icon {
+                font-size: 3em;
+            }
+        }
+        .content-book {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .comment {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+<!--
+  Generated template for the BookInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<div class="header">
+    <ion-navbar>
+        <ion-title>Thông tin sách</ion-title>
+        <ion-buttons right>
+            <button ion-button icon-only (click)="goToShare()">
+        <ion-icon name="share"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
+    <ion-row class="row-header">
+        <ion-col col-4 class="bookpic">
+            <img src="{{book.photoUrl}}">
+        </ion-col>
+        <ion-col margin-left>
+            <div class="bookinfo">
+                <p><b>{{book.name}}</b></p>
+                <br>
+                <p>Tác giả:</p>
+                <br>
+                <p>Đánh giá:
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </p>
+                <div class="row-button a3-container a3-row ">
+                    <button ion-button icon-only color="light" class="add-button" (click)="addBookLend()">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                    <button ion-button color="light" class="button-choice" (click)="goToSelect()">
+                        Muốn đọc 
+                    </button>
+                </div>
+            </div>
+        </ion-col>
+    </ion-row>
+</div>
+<ion-content>
+    <ion-row align-items-center style="border-bottom: 1px solid #cccccc">
+        <ion-col>
+            <ion-badge style="border-radius: 50%;" color="secondary">0</ion-badge>
+        </ion-col>
+        <ion-col col-7>
+            <p style="font-size: 12px;margin:0">người đang cho mượn cuốn sách này</p>
+        </ion-col>
+        <ion-col>
+            <button ion-button round color="primary" class="button-view">Xem danh sách</button>
+        </ion-col>
+    </ion-row>
+    <!-- <div class="vote">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+    </div> -->
+    <div class="content-book">
+        <ion-label><b>Nội dung sách </b></ion-label>
+    </div>
+
+    <div class="comment">
+        <ion-label><b>Bình luận</b></ion-label>
+
+    </div>
+</ion-content>
